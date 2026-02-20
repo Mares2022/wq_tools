@@ -7,6 +7,19 @@
 #
 # This is an h7 specific script for single or multi-node simulations
 
+#--- Specify Slurm SBATCH directives ------------------------------------------------------------------------
+#SBATCH --nodes=1                                 # Number of nodes.
+#SBATCH --ntasks-per-node=44                      # The number of tasks to be invoked on each node.
+                                                  # For sequential runs, the number of tasks should be '1'.
+                                                  # Note: SLURM_NTASKS is equal to "--nodes" multiplied by "--ntasks-per-node".
+#SBATCH --job-name=WES_wq                            # Specify a name for the job allocation.
+#SBATCH --time 10-00:00:00                        # Set a limit on the total run time of the job allocation.
+#SBATCH --partition=44vcpu                        # Request a specific partition for the resource allocation.
+                                                  # See: https://publicwiki.deltares.nl/display/Deltareken/Compute+nodes.
+#SBATCH --mail-type=fail                          # Send an email when the job starts, stops, or fails.
+#SBATCH --mail-user=francesca.dipaola@deltares.nl   # Specify the email address to which notifications are to be sent.
+
+
 #--- Setup the model ----------------------------------------------------------------------------------------
 # DIMR input-file
 export dimrFile="dimr_config.xml"
