@@ -134,8 +134,8 @@ Windhuorzwsbased                    = 0
 # Editable
 #------------------------------------------------------------------------------------------------------
 RefDate                             = 20171201                                                            # Reference date (yyyymmdd)
-Startdatetime                       = 20171225000000                                                      # Start date time (yyyymmddHHMMSS)
-Stopdatetime                        = 20180101000000                                                      # Stop date time (yyyymmddHHMMSS)
+Startdatetime                       = 20180101000000                                                      # Start date time (yyyymmddHHMMSS)
+Stopdatetime                        = 20190101000000                                                      # Stop date time (yyyymmddHHMMSS)
 #------------------------------------------------------------------------------------------------------
 # Uneditable
 #------------------------------------------------------------------------------------------------------
@@ -298,3 +298,17 @@ Wrirst_bnd                          = 1                                         
 MapFormat                           = 4                                                                   # Map file format, 1: netCDF, 2: Tecplot, 3: netCFD and Tecplot, 4: NetCDF-UGRID
 NcFormat                            = 3                                                                   # Format for all NetCDF output files (3: classic, 4: NetCDF4+HDF5)
 NcWriteLatLon                       = 0                                                                   # Write extra lat-lon coordinates for all projected coordinate variables in each NetCDF file (for CF-compliancy).
+#------------------------------------------------------------------------------------------------------
+# Mass balances
+#------------------------------------------------------------------------------------------------------
+MbaInterval                         = 86400.
+MbaWriteCsv                         = 1
+
+#======================================================================================================
+[processes]
+#======================================================================================================
+SubstanceFile                       = Salinity_conti_test.sub
+DtProcesses                         = 600.
+StatisticsFile                      = 
+wriHis_wqBot3d                      = 0
+wriMap_wqBot3d                      = 0
