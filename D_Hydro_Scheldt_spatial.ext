@@ -65,3 +65,17 @@ FILENAME                 =../../../boundary_conditions/hist/J2018/meteo/wind_Vli
 FILETYPE                 =2
 METHOD                   =1
 OPERAND                  =O
+
+QUANTITY=tracerbndContinuity
+FILENAME=../../../geometry/schelde_nevla-j19_6-v3a_enc.pol
+FILETYPE=10
+METHOD=4
+OPERAND=O
+VALUE=1.0
+
+QUANTITY=initialtracercTR1
+FILENAME=../../../geometry/schelde_nevla-j19_6-v3a_enc.pol
+FILETYPE=10
+METHOD=4
+OPERAND=O
+VALUE=1.0

@@ -17,7 +17,7 @@
 #SBATCH --partition=44vcpu                        # Request a specific partition for the resource allocation.
                                                   # See: https://publicwiki.deltares.nl/display/Deltareken/Compute+nodes.
 #SBATCH --mail-type=fail                          # Send an email when the job starts, stops, or fails.
-#SBATCH --mail-user=francesca.dipaola@deltares.nl   # Specify the email address to which notifications are to be sent.
+#SBATCH --mail-user=Mario.FuentesMonjaraz@deltares.nl   # Specify the email address to which notifications are to be sent.
 
 
 #--- Setup the model ----------------------------------------------------------------------------------------
